@@ -1,13 +1,12 @@
 import React from "react";
-import Header from "../components/head";
+import Layout from "../components/layout";
 
 function AboutPage() {
   return (
-    <main>
+    <Layout>
       <title>about</title>
-      <Header />
       <h1>자기소개 페이지입니다.</h1>
-    </main>
+    </Layout>
   );
 }
 

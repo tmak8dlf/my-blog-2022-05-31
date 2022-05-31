@@ -1,13 +1,12 @@
 import * as React from "react";
-import Header from "../components/head";
+import Layout from "../components/layout";
 
 const IndexPage = () => {
   return (
-    <main>
-      <title>Home Page</title>
-      <Header />
+    <Layout>
+      <title>홈</title>
       <h1>Home Page</h1>
-    </main>
+    </Layout>
   );
 };
 
