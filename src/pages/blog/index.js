@@ -16,7 +16,6 @@ const BlogPage = ({ data }) => {
     </Layout>
   );
 };
-
 export const query = graphql`
   query {
     allMdx(sort: { fields: frontmatter___date, order: DESC }) {
@@ -31,5 +30,4 @@ export const query = graphql`
     }
   }
 `;
-
 export default BlogPage;
