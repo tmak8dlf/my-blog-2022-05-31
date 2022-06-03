@@ -5,7 +5,6 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "../../components/layout";
 import CodeBlock from "../../components/CodeBlock";
 import { MDXProvider } from "@mdx-js/react";
-
 const BlogPost = ({ data }) => {
   /*
   console.log(
@@ -38,7 +37,6 @@ const BlogPost = ({ data }) => {
 
       <hr />
 
-      <MDXRenderer>{data.mdx.body}</MDXRenderer>
       <MDXProvider
         components={{
           pre: CodeBlock,
@@ -49,6 +47,7 @@ const BlogPost = ({ data }) => {
     </Layout>
   );
 };
+
 export const query = graphql`
   query ($id: String) {
     mdx(id: { eq: $id }) {
